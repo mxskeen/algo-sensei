@@ -228,7 +228,10 @@ algo-sensei/
 │   ├── hint-mode.md                 # Progressive hints
 │   ├── review-mode.md               # Code review
 │   ├── interview-mode.md            # Mock interviews
-│   └── pattern-mapper-mode.md       # Pattern recognition
+│   ├── pattern-mapper-mode.md       # Pattern recognition
+│   ├── complexity-analyzer-mode.md  # Line-by-line complexity analysis
+│   ├── test-case-generator-mode.md  # Comprehensive test case generation
+│   └── spaced-repetition-mode.md   # Session tracking & review schedule
 ├── templates/
 │   └── solutions/
 │       └── solution-template.md     # Multi-language solution format
@@ -257,9 +260,9 @@ Algo Sensei is built on research-backed learning principles:
 - [x] Dynamic pattern recognition (leverages Claude's full knowledge)
 - [x] Multi-language support (Python, Java, C++, JavaScript, Go, etc.)
 - [ ] Interactive visualization scripts
-- [ ] Complexity analyzer tool
-- [ ] Test case generator
-- [ ] Spaced repetition integration
+- [x] Complexity analyzer tool
+- [x] Test case generator
+- [x] Spaced repetition integration
 - [ ] Progress tracking across sessions
 
 ## Contributing

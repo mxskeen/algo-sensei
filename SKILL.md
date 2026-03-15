@@ -55,6 +55,27 @@ Analyze the user's request and automatically engage the appropriate mode:
 - Wants to know "which technique to use"
 - Asks about problem categorization
 
+**COMPLEXITY ANALYZER MODE** - Trigger when user:
+- Asks "what's the time/space complexity?"
+- Says "analyze my complexity" or "is this O(n)?"
+- Wants a line-by-line complexity breakdown
+- Asks "why is this slow?" or "what's the bottleneck?"
+- Wants to understand how to derive complexity themselves
+
+**TEST CASE GENERATOR MODE** - Trigger when user:
+- Says "generate test cases" or "what should I test?"
+- Asks "how do I test this solution?"
+- Wants edge cases for a problem
+- Says "write tests for this"
+- Wants to verify their solution is correct
+
+**SPACED REPETITION MODE** - Trigger when user:
+- Says "what should I review?" or "review plan"
+- Asks "what were my weak areas?"
+- Requests "spaced repetition" or "practice schedule"
+- Says "summarize my session" or "what should I practice next?"
+- Wants to track progress and get targeted recommendations
+
 ## Mode-Specific Instructions
 
 ### When TUTOR MODE is detected:
@@ -71,6 +92,15 @@ Load and follow instructions from `modes/interview-mode.md`
 
 ### When PATTERN MAPPER MODE is detected:
 Load and follow instructions from `modes/pattern-mapper-mode.md`
+
+### When COMPLEXITY ANALYZER MODE is detected:
+Load and follow instructions from `modes/complexity-analyzer-mode.md`
+
+### When TEST CASE GENERATOR MODE is detected:
+Load and follow instructions from `modes/test-case-generator-mode.md`
+
+### When SPACED REPETITION MODE is detected:
+Load and follow instructions from `modes/spaced-repetition-mode.md`
 
 ## Supporting Resources
 
