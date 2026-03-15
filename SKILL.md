@@ -1,6 +1,6 @@
 ---
 name: algo-sensei
-description: Your personal DSA & LeetCode mentor. Use for problem explanations, progressive hints, code reviews, mock interviews, pattern recognition, complexity analysis, and custom problem generation. Automatically adapts to your learning style and request type.
+description: Your personal DSA & LeetCode mentor. Use for problem explanations, progressive hints, code reviews, mock interviews, pattern recognition, complexity analysis, test case generation, spaced repetition scheduling, and progress tracking across sessions. Automatically adapts to your learning style and request type.
 ---
 
 # Algo Sensei 🥋
@@ -76,6 +76,13 @@ Analyze the user's request and automatically engage the appropriate mode:
 - Says "summarize my session" or "what should I practice next?"
 - Wants to track progress and get targeted recommendations
 
+**PROGRESS TRACKER MODE** - Trigger when user:
+- Shares or mentions their `progress/progress.md` file
+- Says "update my progress" or "log this session"
+- Asks "how am I doing?" or "show my stats"
+- Wants to start a session with personalized context
+- Says "end session" or "save my progress"
+
 ## Mode-Specific Instructions
 
 ### When TUTOR MODE is detected:
@@ -101,6 +108,9 @@ Load and follow instructions from `modes/test-case-generator-mode.md`
 
 ### When SPACED REPETITION MODE is detected:
 Load and follow instructions from `modes/spaced-repetition-mode.md`
+
+### When PROGRESS TRACKER MODE is detected:
+Load and follow instructions from `modes/progress-tracker-mode.md`
 
 ## Supporting Resources
 

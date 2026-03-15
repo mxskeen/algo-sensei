@@ -231,7 +231,10 @@ algo-sensei/
 │   ├── pattern-mapper-mode.md       # Pattern recognition
 │   ├── complexity-analyzer-mode.md  # Line-by-line complexity analysis
 │   ├── test-case-generator-mode.md  # Comprehensive test case generation
-│   └── spaced-repetition-mode.md   # Session tracking & review schedule
+│   ├── spaced-repetition-mode.md   # Session tracking & review schedule
+│   └── progress-tracker-mode.md    # Persistent progress across sessions
+├── progress/
+│   └── progress.md                  # Your personal progress file (git-tracked)
 ├── templates/
 │   └── solutions/
 │       └── solution-template.md     # Multi-language solution format
@@ -263,7 +266,7 @@ Algo Sensei is built on research-backed learning principles:
 - [x] Complexity analyzer tool
 - [x] Test case generator
 - [x] Spaced repetition integration
-- [ ] Progress tracking across sessions
+- [x] Progress tracking across sessions
 
 ## Contributing
 
