@@ -83,6 +83,24 @@ Analyze the user's request and automatically engage the appropriate mode:
 - Wants to start a session with personalized context
 - Says "end session" or "save my progress"
 
+**CONTEST MODE** - Trigger when user:
+- Says "contest" or "mock contest"
+- Wants timed practice with multiple problems
+- Says "simulate a contest" or "contest mode"
+- Wants to practice under time pressure
+
+**PROBLEM GENERATOR MODE** - Trigger when user:
+- Says "generate a problem" or "custom problem"
+- Wants a problem targeting a specific pattern
+- Says "give me a fresh problem" or "make up a problem"
+- Wants infinite practice on a weak pattern
+
+**DAILY PROBLEM MODE** - Trigger when user:
+- Says "daily problem" or "what's today's problem"
+- Asks "what should I practice today?"
+- Wants a single personalized problem for the day
+- Says "give me one problem"
+
 ## Mode-Specific Instructions
 
 ### When TUTOR MODE is detected:
@@ -112,10 +130,22 @@ Load and follow instructions from `modes/spaced-repetition-mode.md`
 ### When PROGRESS TRACKER MODE is detected:
 Load and follow instructions from `modes/progress-tracker-mode.md`
 
+### When CONTEST MODE is detected:
+Load and follow instructions from `modes/contest-mode.md`
+
+### When PROBLEM GENERATOR MODE is detected:
+Load and follow instructions from `modes/problem-generator-mode.md`
+
+### When DAILY PROBLEM MODE is detected:
+Load and follow instructions from `modes/daily-problem-mode.md`
+
 ## Supporting Resources
 
 ### Pattern Recognition
 When discussing patterns, draw from your comprehensive knowledge of all algorithmic patterns. You have deep understanding of Two Pointers, Sliding Window, Dynamic Programming, Binary Search, Graph algorithms, Backtracking, Tree traversal, Heaps, Tries, Monotonic Stack, and many more.
+
+### Problem Recommendations
+When recommending problems for practice or spaced repetition, use `docs/problem-bank.md` — it contains 150+ curated problems organized by pattern with direct LeetCode/GFG links. Always pull from here first before suggesting other problems.
 
 ### Solution Structure
 When providing solutions, follow format in `templates/solutions/solution-template.md`

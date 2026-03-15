@@ -21,20 +21,28 @@ Rate: 🔴 Weak | 🟡 Learning | 🟢 Solid | ⭐ Mastered
 | Pattern | Confidence | Last Practiced | Notes |
 |---------|------------|----------------|-------|
 | Two Pointers | 🔴 Weak | - | - |
+| Fast & Slow Pointers | 🔴 Weak | - | - |
 | Sliding Window | 🔴 Weak | - | - |
+| Kadane's Algorithm | 🔴 Weak | - | - |
+| Prefix Sum | 🔴 Weak | - | - |
 | Binary Search | 🔴 Weak | - | - |
 | Hash Map / Set | 🔴 Weak | - | - |
 | Stack / Monotonic Stack | 🔴 Weak | - | - |
+| Merge Intervals | 🔴 Weak | - | - |
+| Cyclic Sort | 🔴 Weak | - | - |
+| LinkedList Reversal | 🔴 Weak | - | - |
 | Queue / BFS | 🔴 Weak | - | - |
-| DFS / Backtracking | 🔴 Weak | - | - |
+| DFS / Matrix Traversal | 🔴 Weak | - | - |
+| Backtracking / Subsets | 🔴 Weak | - | - |
 | Dynamic Programming | 🔴 Weak | - | - |
 | Greedy | 🔴 Weak | - | - |
-| Heap / Priority Queue | 🔴 Weak | - | - |
-| Linked List | 🔴 Weak | - | - |
-| Tree Traversal | 🔴 Weak | - | - |
-| Graph Algorithms | 🔴 Weak | - | - |
+| Heap / Top K Elements | 🔴 Weak | - | - |
+| Two Heaps | 🔴 Weak | - | - |
 | Trie | 🔴 Weak | - | - |
+| Topological Sort | 🔴 Weak | - | - |
 | Union Find | 🔴 Weak | - | - |
+| Bitwise XOR | 🔴 Weak | - | - |
+| Ordered Set | 🔴 Weak | - | - |
 
 ---
 
