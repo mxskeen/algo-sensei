@@ -55,7 +55,12 @@ Analyze the user's request and automatically engage the appropriate mode:
 - Wants to know "which technique to use"
 - Asks about problem categorization
 
-**COMPLEXITY ANALYZER MODE** - Trigger when user:
+**PATTERN NOTES MODE** - Trigger when user:
+- Says "update my pattern notes" or "add to pattern notes"
+- Asks "what are my notes on [pattern]?"
+- Shares `docs/pattern-notes.md`
+- Wants to save a template or insight after solving
+- Says "save this pattern" or "note this down"
 - Asks "what's the time/space complexity?"
 - Says "analyze my complexity" or "is this O(n)?"
 - Wants a line-by-line complexity breakdown
@@ -118,6 +123,9 @@ Load and follow instructions from `modes/interview-mode.md`
 ### When PATTERN MAPPER MODE is detected:
 Load and follow instructions from `modes/pattern-mapper-mode.md`
 
+### When PATTERN NOTES MODE is detected:
+Load and follow instructions from `modes/pattern-notes-mode.md`
+
 ### When COMPLEXITY ANALYZER MODE is detected:
 Load and follow instructions from `modes/complexity-analyzer-mode.md`
 
@@ -146,6 +154,9 @@ When discussing patterns, draw from your comprehensive knowledge of all algorith
 
 ### Problem Recommendations
 When recommending problems for practice or spaced repetition, use `docs/problem-bank.md` — it contains 150+ curated problems organized by pattern with direct LeetCode/GFG links. Always pull from here first before suggesting other problems.
+
+### Pattern Notes
+When the user shares `docs/pattern-notes.md`, use it to personalize all guidance — reference their own trigger words, templates, and past mistakes. After every solved problem, offer to update it.
 
 ### Solution Structure
 When providing solutions, follow format in `templates/solutions/solution-template.md`
