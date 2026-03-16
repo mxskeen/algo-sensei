@@ -223,6 +223,8 @@ Works for all patterns: Two Pointers, Sliding Window, DP, Graphs, Heaps, Tries, 
 algo-sensei/
 ├── SKILL.md                          # Main skill file (intelligent router)
 ├── README.md                         # You are here
+├── CLAUDE.md                         # Claude Code auto-save instructions
+├── TODO.md                           # Roadmap and task tracking
 ├── modes/
 │   ├── tutor-mode.md                # Concept explanations
 │   ├── hint-mode.md                 # Progressive hints
@@ -231,17 +233,25 @@ algo-sensei/
 │   ├── pattern-mapper-mode.md       # Pattern recognition
 │   ├── complexity-analyzer-mode.md  # Line-by-line complexity analysis
 │   ├── test-case-generator-mode.md  # Comprehensive test case generation
-│   ├── spaced-repetition-mode.md   # Session tracking & review schedule
-│   └── progress-tracker-mode.md    # Persistent progress across sessions
+│   ├── spaced-repetition-mode.md    # Session tracking & review schedule
+│   ├── progress-tracker-mode.md     # Persistent progress across sessions
+│   ├── contest-mode.md              # Timed contest simulation
+│   ├── problem-generator-mode.md    # Custom problem generation
+│   └── daily-problem-mode.md        # Personalized daily problem
+├── scripts/
+│   ├── README.md                    # How to run the scripts
+│   ├── visualize_binary_search.py   # Binary search step-by-step
+│   ├── visualize_two_pointers.py    # Two pointers converging
+│   ├── visualize_sliding_window.py  # Window expand/shrink
+│   └── visualize_bfs.py             # BFS level-by-level
 ├── progress/
 │   └── progress.md                  # Your personal progress file (git-tracked)
 ├── templates/
 │   └── solutions/
 │       └── solution-template.md     # Multi-language solution format
-├── scripts/
-│   └── [future: test generators, complexity analyzers]
 └── docs/
-    └── dsa-cheatsheet.md            # Quick reference
+    ├── dsa-cheatsheet.md            # Quick reference
+    └── problem-bank.md              # 150+ problems across 23 patterns
 ```
 
 ## Philosophy
@@ -262,7 +272,7 @@ Algo Sensei is built on research-backed learning principles:
 - [x] Core 5 modes (Tutor, Hint, Review, Interview, Pattern Mapper)
 - [x] Dynamic pattern recognition (leverages Claude's full knowledge)
 - [x] Multi-language support (Python, Java, C++, JavaScript, Go, etc.)
-- [ ] Interactive visualization scripts
+- [x] Interactive visualization scripts
 - [x] Complexity analyzer tool
 - [x] Test case generator
 - [x] Spaced repetition integration

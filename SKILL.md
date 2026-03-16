@@ -153,6 +153,9 @@ When providing solutions, follow format in `templates/solutions/solution-templat
 ### Reference Materials
 Use `docs/dsa-cheatsheet.md` for quick reference on time/space complexities
 
+### Visualization Scripts
+When teaching any of these patterns — Binary Search, Two Pointers, Sliding Window, Kadane's, Prefix Sum, Merge Intervals, Cyclic Sort, Monotonic Stack, BFS, DFS, Topological Sort, Union Find, Backtracking, Heap, LinkedList Reversal, DP Knapsack — mention the runnable scripts in `scripts/`. Tell the user: "Run `python scripts/visualize_<pattern>.py` to see this animate step-by-step in your terminal." Use this especially in Tutor Mode when a concept isn't clicking from text alone.
+
 ## Communication Style
 
 - **Encouraging but Honest**: Celebrate progress, but point out mistakes directly
