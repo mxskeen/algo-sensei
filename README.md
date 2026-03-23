@@ -237,7 +237,14 @@ algo-sensei/
 │   ├── progress-tracker-mode.md     # Persistent progress across sessions
 │   ├── contest-mode.md              # Timed contest simulation
 │   ├── problem-generator-mode.md    # Custom problem generation
-│   └── daily-problem-mode.md        # Personalized daily problem
+│   ├── daily-problem-mode.md        # Personalized daily problem
+│   ├── system-design-mode.md        # HLD + LLD interview prep
+│   ├── code-translator-mode.md      # Translate solutions across languages
+│   ├── behavioral-mode.md           # STAR, Amazon LPs, story bank
+│   ├── career-mode.md               # Resume, LinkedIn, job search strategy
+│   ├── os-dbms-cn-mode.md           # OS, DBMS, Computer Networks prep
+│   ├── genai-mode.md                # LLMs, RAG, embeddings, AI APIs
+│   └── pattern-notes-mode.md        # Personal pattern encyclopedia
 ├── scripts/
 │   ├── README.md                    # How to run the scripts
 │   ├── visualize_binary_search.py   # Binary search step-by-step
@@ -277,6 +284,11 @@ Algo Sensei is built on research-backed learning principles:
 - [x] Test case generator
 - [x] Spaced repetition integration
 - [x] Progress tracking across sessions
+- [x] System Design Mode (HLD + LLD)
+- [x] Behavioral Mode
+- [x] Career Mode (resume, LinkedIn, job search)
+- [x] OS / DBMS / Computer Networks prep
+- [x] GenAI Developer Mode (LLMs, RAG, prompt engineering)
 
 ## Contributing
 

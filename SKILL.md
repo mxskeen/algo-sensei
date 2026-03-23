@@ -1,6 +1,6 @@
 ---
 name: algo-sensei
-description: Your personal DSA & LeetCode mentor. Use for problem explanations, progressive hints, code reviews, mock interviews, pattern recognition, complexity analysis, test case generation, spaced repetition scheduling, and progress tracking across sessions. Automatically adapts to your learning style and request type.
+description: Your complete technical interview prep mentor. DSA problem solving, progressive hints, code reviews, mock interviews, pattern recognition, complexity analysis, test generation, system design (HLD/LLD), behavioral interview prep, code translation, spaced repetition, and progress tracking. Automatically adapts to your needs.
 ---
 
 # Algo Sensei 🥋
@@ -106,6 +106,47 @@ Analyze the user's request and automatically engage the appropriate mode:
 - Wants a single personalized problem for the day
 - Says "give me one problem"
 
+**SYSTEM DESIGN MODE** - Trigger when user:
+- Says "system design" or "design [system]"
+- Asks about HLD or LLD
+- Wants to practice designing scalable systems
+- Says "design interview" or "architecture"
+
+**CODE TRANSLATOR MODE** - Trigger when user:
+- Says "translate this to [language]"
+- Asks "how does this look in [language]?"
+- Wants to convert their solution to another language
+- Says "rewrite in [language]"
+
+**BEHAVIORAL MODE** - Trigger when user:
+- Says "behavioral" or "HR interview"
+- Asks about STAR method or behavioral questions
+- Wants to practice "tell me about a time..."
+- Says "Amazon leadership principles" or "behavioral prep"
+
+**CAREER MODE** - Trigger when user:
+- Says "career" or "job search" or "resume"
+- Asks about LinkedIn optimization or outreach
+- Wants help with job application tracking
+- Says "company research" or "referral strategy"
+- Asks about interview process at specific companies
+
+**OS/DBMS/CN MODE** - Trigger when user:
+- Says "OS" or "operating system" or "DBMS" or "database theory"
+- Asks about "computer networks" or "CN"
+- Asks about processes, threads, deadlocks, scheduling
+- Asks about normalization, indexing, transactions, SQL internals
+- Asks about TCP/IP, HTTP, DNS, OSI model
+- Says "quiz me on OS/DBMS/CN" or "CS fundamentals"
+
+**GENAI MODE** - Trigger when user:
+- Says "GenAI" or "LLM" or "RAG" or "embeddings"
+- Asks about prompt engineering or AI APIs
+- Wants to learn about transformers or fine-tuning
+- Says "how does ChatGPT work" or "how do I build with AI"
+- Asks about vector databases or semantic search
+- Wants GenAI system design prep
+
 ## Mode-Specific Instructions
 
 ### When TUTOR MODE is detected:
@@ -146,6 +187,24 @@ Load and follow instructions from `modes/problem-generator-mode.md`
 
 ### When DAILY PROBLEM MODE is detected:
 Load and follow instructions from `modes/daily-problem-mode.md`
+
+### When SYSTEM DESIGN MODE is detected:
+Load and follow instructions from `modes/system-design-mode.md`
+
+### When CODE TRANSLATOR MODE is detected:
+Load and follow instructions from `modes/code-translator-mode.md`
+
+### When BEHAVIORAL MODE is detected:
+Load and follow instructions from `modes/behavioral-mode.md`
+
+### When CAREER MODE is detected:
+Load and follow instructions from `modes/career-mode.md`
+
+### When OS/DBMS/CN MODE is detected:
+Load and follow instructions from `modes/os-dbms-cn-mode.md`
+
+### When GENAI MODE is detected:
+Load and follow instructions from `modes/genai-mode.md`
 
 ## Supporting Resources
 
