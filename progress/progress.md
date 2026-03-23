@@ -62,7 +62,29 @@ Problems/patterns scheduled for review (from spaced repetition):
 
 ---
 
-## Session Log
+## GPU / Systems Progress
+
+### CUDA 100-Day Challenge
+- **Started:** -
+- **Current Day:** 0
+- **Last kernel built:** -
+
+| Day | What I Built | Concepts Learned | Notes |
+|-----|-------------|-----------------|-------|
+
+### Systems Programming
+| Topic | Language | Status | Notes |
+|-------|----------|--------|-------|
+| Pointers & Memory | C++ | 🔴 Not started | |
+| RAII / Smart Pointers | C++ | 🔴 Not started | |
+| Move Semantics | C++ | 🔴 Not started | |
+| Concurrency | C++ | 🔴 Not started | |
+| Ownership & Borrowing | Rust | 🔴 Not started | |
+| Error Handling | Rust | 🔴 Not started | |
+| Concurrency | Rust | 🔴 Not started | |
+| Goroutines & Channels | Go | 🔴 Not started | |
+
+---
 
 <!-- Sessions will be appended here by Algo Sensei after each practice session -->
 

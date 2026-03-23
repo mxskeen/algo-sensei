@@ -244,6 +244,8 @@ algo-sensei/
 │   ├── career-mode.md               # Resume, LinkedIn, job search strategy
 │   ├── os-dbms-cn-mode.md           # OS, DBMS, Computer Networks prep
 │   ├── genai-mode.md                # LLMs, RAG, embeddings, AI APIs
+│   ├── cuda-gpu-mode.md             # CUDA kernels, GPU programming, 100-day tracker
+│   ├── systems-programming-mode.md  # C++, Rust, Go — memory, concurrency, perf
 │   └── pattern-notes-mode.md        # Personal pattern encyclopedia
 ├── scripts/
 │   ├── README.md                    # How to run the scripts
@@ -289,6 +291,8 @@ Algo Sensei is built on research-backed learning principles:
 - [x] Career Mode (resume, LinkedIn, job search)
 - [x] OS / DBMS / Computer Networks prep
 - [x] GenAI Developer Mode (LLMs, RAG, prompt engineering)
+- [x] CUDA / GPU Programming Mode (kernels, ML primitives, 100-day challenge)
+- [x] Systems Programming Mode (C++, Rust, Go)
 
 ## Contributing
 
