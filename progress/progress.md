@@ -140,12 +140,21 @@ Problems/patterns scheduled for review (from spaced repetition):
 - **Outcome:** all modes are now explicitly aligned with first-principles reasoning, while remaining repo/language-adaptive.
 - **Review queue updates (next session):** run two different modes (one DSA + one non-DSA) and confirm responses start with objective/constraints/invariants/trade-offs.
 
+#### 2026-04-13 — Full-Potential Usage Playbook (approx. 15 min)
+
+- **Topics covered:** practical operating workflow for using Algo Sensei at maximum effectiveness.
+- **What was learned:**
+	- Best results come from short, repeatable loops: objective → constraints → attempt → feedback → reflection.
+	- Mode switching should be intentional: Tutor/Hint early, Review/Pattern Notes after implementation, Progress Tracker at session close.
+	- AI should be used as a reasoning accelerator, not as a direct answer generator.
+- **Review queue updates (next session):** run one complete issue loop and record where the highest friction happened (repro, hypothesis, implementation, or test proof).
+
 ---
 
 ## Stats
 
 - **Total problems solved:** 0
-- **Total sessions:** 4
+- **Total sessions:** 5
 - **Current streak:** 0 days
 - **Strongest pattern:** -
 - **Needs most work:** -
