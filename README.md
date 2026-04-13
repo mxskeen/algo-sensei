@@ -72,6 +72,13 @@ Learn to recognize algorithmic patterns dynamically:
 
 **Stop solving random problems. Start recognizing patterns.**
 
+### 🌍 OSS Contributor Mode
+Learn open-source contribution without becoming AI-dependent:
+- Repo-independent learning loop (recon → reproduce → design → thin-slice implementation)
+- Progressive guidance instead of instant full patches
+- Emphasis on root-cause thinking, tests, and reflection
+- Works for Go, Rust, C++, Python, TypeScript, and more
+
 ## Installation
 
 ### For Claude Code Users (Recommended)
@@ -246,6 +253,7 @@ algo-sensei/
 │   ├── genai-mode.md                # LLMs, RAG, embeddings, AI APIs
 │   ├── cuda-gpu-mode.md             # CUDA kernels, GPU programming, 100-day tracker
 │   ├── systems-programming-mode.md  # C++, Rust, Go — memory, concurrency, perf
+│   ├── oss-contribution-mode.md     # Learn OSS contribution without AI autopilot
 │   └── pattern-notes-mode.md        # Personal pattern encyclopedia
 ├── scripts/
 │   ├── README.md                    # How to run the scripts

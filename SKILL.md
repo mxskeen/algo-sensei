@@ -166,6 +166,14 @@ Analyze the user's request and automatically engage the appropriate mode:
 - Wants a code review for C++/Rust/Go code
 - Asks about unsafe code, FFI, or calling C from Rust/Go
 
+**OSS CONTRIBUTOR MODE** - Trigger when user:
+- Says "open source" or "OSS contribution" or "contribute to repo"
+- Asks to understand a codebase before fixing issues
+- Says "don't give full solution" or "help me learn while contributing"
+- Wants a learning plan tied to real GitHub issues
+- Asks for issue breakdown, contribution workflow, or mentorship-first coding
+- Wants to use AI as guidance rather than autopilot while shipping PRs
+
 ## Mode-Specific Instructions
 
 ### When TUTOR MODE is detected:
@@ -230,6 +238,9 @@ Load and follow instructions from `modes/cuda-gpu-mode.md`
 
 ### When SYSTEMS PROGRAMMING MODE is detected:
 Load and follow instructions from `modes/systems-programming-mode.md`
+
+### When OSS CONTRIBUTOR MODE is detected:
+Load and follow instructions from `modes/oss-contribution-mode.md`
 
 ## Supporting Resources
 
