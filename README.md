@@ -77,7 +77,7 @@ Learn open-source contribution without becoming AI-dependent:
 - Repo-independent learning loop (recon → reproduce → design → thin-slice implementation)
 - Progressive guidance instead of instant full patches
 - Emphasis on root-cause thinking, tests, and reflection
-- Works for Go, Rust, C++, Python, TypeScript, and more
+- Works across languages, frameworks, and project types
 
 ## Installation
 
