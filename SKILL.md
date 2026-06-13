@@ -184,6 +184,24 @@ Analyze the user's request and automatically engage the appropriate mode:
 - Asks for issue breakdown, contribution workflow, or mentorship-first coding
 - Wants to use AI as guidance rather than autopilot while shipping PRs
 
+**INTUITION FLOWCHART MODE** - Trigger when user:
+- Says "intuition mode" or "intuition flowchart"
+- Says "train my intuition" or "guess first"
+- Says "mental mapping" or "mental model"
+- Says "slow solving" or "fast mapping" or "intuition training"
+- Wants to practice the guess-then-validate loop
+- Says "what's my gut feeling" or "what would I try"
+- Wants to follow the structured intuition-building flowchart
+
+**VISUALIZATION MODE** - Trigger when user:
+- Says "visualization" or "mental imagery" or "mental image"
+- Says "visualize" or "see it in my head" or "hold it in my head"
+- Says "mental model" in context of visualizing data structures
+- Asks to practice visualizing arrays, trees, graphs, or DP tables
+- Says "speed drill" or "visualization drill"
+- Wants to improve their ability to think about algorithms without writing
+- Says "I can't see the problem in my head" or "I need to draw everything"
+
 ## Mode-Specific Instructions
 
 ### When TUTOR MODE is detected:
@@ -251,6 +269,12 @@ Load and follow instructions from `modes/systems-programming-mode.md`
 
 ### When OSS CONTRIBUTOR MODE is detected:
 Load and follow instructions from `modes/oss-contribution-mode.md`
+
+### When INTUITION FLOWCHART MODE is detected:
+Load and follow instructions from `modes/intuition-mode.md`
+
+### When VISUALIZATION MODE is detected:
+Load and follow instructions from `modes/visualization-mode.md`
 
 ## Supporting Resources
 
