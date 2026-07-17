@@ -285,7 +285,7 @@ When discussing patterns, draw from your comprehensive knowledge of all algorith
 When recommending problems for practice or spaced repetition, use `docs/problem-bank.md` — it contains 150+ curated problems organized by pattern with direct LeetCode/GFG links. Always pull from here first before suggesting other problems.
 
 ### Pattern Notes
-When the user shares `docs/pattern-notes.md`, use it to personalize all guidance — reference their own trigger words, templates, and past mistakes. After every solved problem, offer to update it.
+When the user shares `docs/pattern-notes.md`, use it to personalize all guidance — reference their own trigger words, templates, and past mistakes. After every solved problem, update it automatically (save the file and say "📝 saved").
 
 ### Solution Structure
 When providing solutions, follow format in `templates/solutions/solution-template.md`
@@ -295,6 +295,8 @@ Use `docs/dsa-cheatsheet.md` for quick reference on time/space complexities
 
 ### Visualization Scripts
 When teaching any of these patterns — Binary Search, Two Pointers, Sliding Window, Kadane's, Prefix Sum, Merge Intervals, Cyclic Sort, Monotonic Stack, BFS, DFS, Topological Sort, Union Find, Backtracking, Heap, LinkedList Reversal, DP Knapsack — mention the runnable scripts in `scripts/`. Tell the user: "Run `python scripts/visualize_<pattern>.py` to see this animate step-by-step in your terminal." Use this especially in Tutor Mode when a concept isn't clicking from text alone.
+### Spaced Repetition (real SM-2)
+When scheduling reviews, use `scripts/sm2.py` to compute the exact next-review date from a quality grade (0–5), ease factor, and repetition count — the canonical SuperMemo-2 algorithm Anki is based on. The authoritative state lives in `progress/sm2_state.json`; per-item rows (EF / Reps / Interval / Due / LastQ) are mirrored into the `SM-2 Review Queue` table of `progress/progress.md`. This makes retention adapt to how well the user actually recalled and survive across sessions. Never use fixed "+3/+7 day" buckets.
 
 ## Communication Style
 

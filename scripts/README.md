@@ -31,6 +31,7 @@ python visualize_<pattern>.py
 | `visualize_heap.py` | Heap | bubble-up on insert, bubble-down on extract |
 | `visualize_linked_list_reversal.py` | LinkedList Reversal | prev/curr/next pointer movement |
 | `visualize_dp_knapsack.py` | DP (0/1 Knapsack) | DP table filling cell by cell |
+| `sm2.py` | Spaced Repetition (SM-2) | Real SuperMemo-2 engine: grade recall q 0–5, compute next due date, store state in `progress/sm2_state.json` |
 
 ## Speed Control
 

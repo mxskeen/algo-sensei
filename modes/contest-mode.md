@@ -199,7 +199,7 @@ Hints used: [total hints]
 
 ## Progress Integration
 
-After contest, offer to update `progress/progress.md`:
+After contest, update `progress/progress.md` automatically (save + say "📝 saved"):
 - Log the contest as a session
 - Update pattern confidence based on performance
 - Add unsolved/struggled problems to review queue

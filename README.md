@@ -292,7 +292,7 @@ Algo Sensei is built on research-backed learning principles:
 - [x] Interactive visualization scripts
 - [x] Complexity analyzer tool
 - [x] Test case generator
-- [x] Spaced repetition integration
+- [x] Spaced repetition (real SM-2 engine — `scripts/sm2.py` + `progress/sm2_state.json`)
 - [x] Progress tracking across sessions
 - [x] System Design Mode (HLD + LLD)
 - [x] Behavioral Mode

@@ -1,22 +1,25 @@
 # Algo Sensei Progress Tracker 📊
 
-> This file is maintained by Algo Sensei. At the start of each session, share this file for personalized guidance.
-> At the end of each session, ask Algo Sensei to update it.
+> This file is maintained by Algo Sensei. At the start of each session, share it for personalized guidance.
+> At the end of every session Algo Sensei updates it automatically — no need to ask.
+> This is the single source of truth for your progress. Your personal pattern notes live in `docs/pattern-notes.md`.
 
 ---
 
 ## Profile
 
-**Started:** [date]
-**Primary Focus Stack:** [language(s)/framework(s)/domain]
-**Goal:** [e.g., FAANG prep, general DSA, specific interview date]
-**Self-assessed Level:** [Beginner/Intermediate/Advanced]
+**Started:** 2026-07-17
+**Primary Focus Stack:** [fill in — e.g. Python / Java / C++]  *(set this so hints match your language)*
+**Goal:** Interview-ready DSA — rely solely on Algo Sensei. Cover the full pattern sheet end-to-end and retain it with real SM-2 spaced repetition.
+**Self-assessed Level:** [Beginner / Intermediate / Advanced — fill in]
+**Interview target date:** [fill in if you have one]
 
 ---
 
 ## Pattern Confidence Map
 
 Rate: 🔴 Weak | 🟡 Learning | 🟢 Solid | ⭐ Mastered
+Names match `docs/problem-bank.md` exactly (the sheet).
 
 | Pattern | Confidence | Last Practiced | Notes |
 |---------|------------|----------------|-------|
@@ -25,24 +28,38 @@ Rate: 🔴 Weak | 🟡 Learning | 🟢 Solid | ⭐ Mastered
 | Sliding Window | 🔴 Weak | - | - |
 | Kadane's Algorithm | 🔴 Weak | - | - |
 | Prefix Sum | 🔴 Weak | - | - |
-| Binary Search | 🔴 Weak | - | - |
-| Hash Map / Set | 🔴 Weak | - | - |
-| Stack / Monotonic Stack | 🔴 Weak | - | - |
 | Merge Intervals | 🔴 Weak | - | - |
 | Cyclic Sort | 🔴 Weak | - | - |
-| LinkedList Reversal | 🔴 Weak | - | - |
-| Queue / BFS | 🔴 Weak | - | - |
-| DFS / Matrix Traversal | 🔴 Weak | - | - |
-| Backtracking / Subsets | 🔴 Weak | - | - |
-| Dynamic Programming | 🔴 Weak | - | - |
-| Greedy | 🔴 Weak | - | - |
-| Heap / Top K Elements | 🔴 Weak | - | - |
+| In-place Reversal of LinkedList | 🔴 Weak | - | - |
+| Stack / Monotonic Stack | 🔴 Weak | - | - |
+| Hash Maps | 🔴 Weak | - | - |
+| Binary Search | 🔴 Weak | - | - |
+| Graph BFS | 🔴 Weak | - | - |
+| Island / Matrix Traversal | 🔴 Weak | - | - |
 | Two Heaps | 🔴 Weak | - | - |
+| Subsets / Backtracking | 🔴 Weak | - | - |
+| Top K Elements (Heap) | 🔴 Weak | - | - |
+| Greedy | 🔴 Weak | - | - |
+| Dynamic Programming (0/1 Knapsack) | 🔴 Weak | - | - |
 | Trie | 🔴 Weak | - | - |
 | Topological Sort | 🔴 Weak | - | - |
 | Union Find | 🔴 Weak | - | - |
-| Bitwise XOR | 🔴 Weak | - | - |
 | Ordered Set | 🔴 Weak | - | - |
+| Bitwise XOR | 🔴 Weak | - | - |
+| Binary Trees & BST | 🔴 Weak | - | - |
+| Dynamic Programming (1-D / Fibonacci) | 🔴 Weak | - | - |
+| Dynamic Programming (2-D / String) | 🔴 Weak | - | - |
+| Advanced Graphs | 🔴 Weak | - | - |
+
+---
+
+## Curriculum Coverage
+
+Full pattern sheet = `docs/problem-bank.md` (27 patterns, 170+ problems, easy→hard, LeetCode/GFG links).
+
+- **Patterns:** 0 / 27 mastered (⭐)
+- **Problems solved:** 0 / ~170  *(see Problems Solved below)*
+- **Plan:** clear every pattern ⭐ before your interview. Daily Problem Mode walks the sheet in order: weakest untouched pattern → its Easy problem → Medium → Hard.
 
 ---
 
@@ -53,12 +70,19 @@ Rate: 🔴 Weak | 🟡 Learning | 🟢 Solid | ⭐ Mastered
 
 ---
 
-## Review Queue
+## SM-2 Review Queue
 
-Problems/patterns scheduled for review (from spaced repetition):
+Real SuperMemo-2 state for every item scheduled for review — this is the spaced-repetition engine (the basis for Anki). The authoritative state lives in `progress/sm2_state.json`, managed by `scripts/sm2.py`. After each review, grade recall quality `q ∈ 0–5` and run:
 
-| Item | Type | Due Date | Priority |
-|------|------|----------|----------|
+```bash
+python scripts/sm2.py review --item "<name>" --q <0-5>
+```
+
+Then paste the printed row below (or run `python scripts/sm2.py export-md` to regenerate this whole table).
+
+| Item | Type | EF | Reps | Interval | Due | LastQ | Last Reviewed |
+|------|------|----|----|----------|-----|-------|---------------|
+| _(added automatically after each session — none yet)_ | | | | | | | |
 
 ---
 

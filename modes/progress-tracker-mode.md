@@ -161,13 +161,20 @@ Work closely with spaced-repetition-mode. The review queue in `progress.md` IS t
 | Sliding Window | Pattern | [today + 1 day] | High |
 ```
 
-**SM-2 due date rules:**
-- Hard struggle → review tomorrow, then +3 days, then +7 days
-- Medium struggle → review in 2 days, then +5 days, then +14 days  
-- Easy / minor → review in 4 days, then +10 days, then +21 days
+**SM-2 scheduling (real algorithm — not a fixed calendar):**
+Each review item is a row in the **SM-2 Review Queue** (authoritative state in `progress/sm2_state.json`, managed by `scripts/sm2.py`). After the user recalls an item, grade quality `q ∈ 0–5` and run:
 
-**Clearing from queue:**
-When a review item is successfully completed, either remove it or push the due date forward by the next interval.
+```bash
+python scripts/sm2.py review --item "<name>" --q <0-5>
+```
+
+The engine applies canonical SM-2:
+- `EF' = EF + (0.1 − (5−q)(0.08 + (5−q)0.02))`, floor 1.3
+- `q < 3` → lapse: `reps = 0`, `interval = 1` (relearn tomorrow)
+- else `reps += 1`; `interval = 1` (1st success), `6` (2nd), then `round(interval_prev × EF')` — grows forever
+- It writes the new row and prints a paste-ready markdown line for `progress/progress.md`.
+
+Easy items drift to long intervals; hard items stay frequent. Never use the old fixed "+3/+7/+14 day" buckets.
 
 ---
 

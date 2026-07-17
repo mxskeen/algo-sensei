@@ -343,7 +343,7 @@ This builds the "recognition reflex" — the ability to see a new problem and im
 
 ### Step 5: Update Pattern Notes
 
-Offer to update `docs/pattern-notes.md` with:
+Update `docs/pattern-notes.md` automatically with:
 - New trigger words discovered
 - Updated template (if they found a cleaner approach)
 - Common mistake they made (so future them doesn't repeat it)

@@ -300,6 +300,71 @@
 | Two Single Numbers | Medium | [LC](https://leetcode.com/problems/single-number-iii/) |
 | Complement of Base 10 Number | Medium | [LC](https://leetcode.com/problems/complement-of-base-10-integer/) |
 
+## 24. Binary Trees & BST
+
+| Problem | Difficulty | Link |
+|---------|------------|------|
+| Maximum Depth of Binary Tree | Easy | [LC](https://leetcode.com/problems/maximum-depth-of-binary-tree/) |
+| Invert / Flip Binary Tree | Easy | [LC](https://leetcode.com/problems/invert-binary-tree/) |
+| Same Tree | Easy | [LC](https://leetcode.com/problems/same-tree/) |
+| Symmetric Tree | Easy | [LC](https://leetcode.com/problems/symmetric-tree/) |
+| Diameter of Binary Tree | Easy | [LC](https://leetcode.com/problems/diameter-of-binary-tree/) |
+| Balanced Binary Tree | Easy | [LC](https://leetcode.com/problems/balanced-binary-tree/) |
+| Path Sum | Easy | [LC](https://leetcode.com/problems/path-sum/) |
+| Lowest Common Ancestor of BST | Easy | [LC](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) |
+| Validate Binary Search Tree | Medium | [LC](https://leetcode.com/problems/validate-binary-search-tree/) |
+| Lowest Common Ancestor of a Binary Tree | Medium | [LC](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) |
+| Binary Tree Level Order Traversal | Medium | [LC](https://leetcode.com/problems/binary-tree-level-order-traversal/) |
+| Construct Binary Tree from Preorder and Inorder | Medium | [LC](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) |
+| Kth Smallest Element in a BST | Medium | [LC](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) |
+| Serialize and Deserialize Binary Tree | Hard | [LC](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) |
+
+---
+
+## 25. Dynamic Programming (1-D / Fibonacci)
+
+| Problem | Difficulty | Link |
+|---------|------------|------|
+| Climbing Stairs | Easy | [LC](https://leetcode.com/problems/climbing-stairs/) |
+| Fibonacci Number | Easy | [LC](https://leetcode.com/problems/fibonacci-number/) |
+| Min Cost Climbing Stairs | Easy | [LC](https://leetcode.com/problems/min-cost-climbing-stairs/) |
+| Best Time to Buy and Sell Stock | Easy | [LC](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) |
+| House Robber | Medium | [LC](https://leetcode.com/problems/house-rober/) |
+| House Robber II | Medium | [LC](https://leetcode.com/problems/house-robber-ii/) |
+| Decode Ways | Medium | [LC](https://leetcode.com/problems/decode-ways/) |
+| Word Break | Medium | [LC](https://leetcode.com/problems/word-break/) |
+| Longest Increasing Subsequence | Medium | [LC](https://leetcode.com/problems/longest-increasing-subsequence/) |
+| Coin Change (unbounded) | Medium | [LC](https://leetcode.com/problems/coin-change/) |
+
+---
+
+## 26. Dynamic Programming (2-D / String)
+
+| Problem | Difficulty | Link |
+|---------|------------|------|
+| Unique Paths | Medium | [LC](https://leetcode.com/problems/unique-paths/) |
+| Unique Paths II | Medium | [LC](https://leetcode.com/problems/unique-paths-ii/) |
+| Longest Common Subsequence | Medium | [LC](https://leetcode.com/problems/longest-common-subsequence/) |
+| Longest Palindromic Subsequence | Medium | [LC](https://leetcode.com/problems/longest-palindromic-subsequence/) |
+| Edit Distance | Hard | [LC](https://leetcode.com/problems/edit-distance/) |
+| Distinct Subsequences | Hard | [LC](https://leetcode.com/problems/distinct-subsequences/) |
+| Regular Expression Matching | Hard | [LC](https://leetcode.com/problems/regular-expression-matching/) |
+| Burst Balloons | Hard | [LC](https://leetcode.com/problems/burst-balloons/) |
+
+## 27. Advanced Graphs
+
+| Problem | Difficulty | Link |
+|---------|------------|------|
+| Clone Graph | Medium | [LC](https://leetcode.com/problems/clone-graph/) |
+| Network Delay Time (Dijkstra) | Medium | [LC](https://leetcode.com/problems/network-delay-time/) |
+| Cheapest Flights Within K Stops (Bellman-Ford) | Medium | [LC](https://leetcode.com/problems/cheapest-flights-within-k-stops/) |
+| Min Cost to Connect All Points (MST / Prim-Kruskal) | Medium | [LC](https://leetcode.com/problems/min-cost-to-connect-all-points/) |
+| Path With Maximum Minimum (Dijkstra variant) | Medium | [LC](https://leetcode.com/problems/path-with-maximum-minimum/) |
+| Word Ladder (BFS on graph) | Hard | [LC](https://leetcode.com/problems/word-ladder/) |
+| Critical Connections in a Network (SCC / Tarjan) | Hard | [LC](https://leetcode.com/problems/critical-connections-in-a-network/) |
+| Reconstruct Itinerary (Eulerian path) | Hard | [LC](https://leetcode.com/problems/reconstruct-itinerary/) |
+| Swim in Rising Water (Dijkstra / Union-Find) | Hard | [LC](https://leetcode.com/problems/swim-in-rising-water/) |
+
 ---
 
 > **Usage:** When Algo Sensei recommends problems based on your weak patterns in `progress/progress.md`, it pulls from this bank. Problems are ordered easy → hard within each pattern — start from the top when learning a new pattern.

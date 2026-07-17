@@ -47,15 +47,25 @@ Categorize struggles by:
 **Edge Case Weakness** (missed boundary conditions)
 - e.g., "Forgot to handle empty input"
 
-### Phase 3: Generate Review Schedule
+### Phase 3: Schedule Reviews with REAL SM-2
 
-Based on the SM-2 spaced repetition algorithm (simplified):
+This uses the actual SuperMemo-2 algorithm (the basis for Anki's original scheduler) — not a fixed calendar. Every item you schedule carries state: an **ease factor (EF)**, a **repetition count**, and an **interval**. The authoritative state lives in `progress/sm2_state.json`, managed by `scripts/sm2.py`.
 
-| Difficulty | First Review | Second Review | Third Review |
-|------------|-------------|---------------|--------------|
-| Hard (needed many hints) | Tomorrow | 3 days | 7 days |
-| Medium (needed some hints) | 2 days | 5 days | 14 days |
-| Easy (minor struggle) | 4 days | 10 days | 21 days |
+After each review you grade recall **quality q ∈ 0–5**:
+- **5** = perfect recall · **4** = correct after a hesitation · **3** = correct but difficult · **2** = wrong but familiar · **1** = wrong · **0** = blackout.
+
+Update the item with the engine (no mental math, no hand-transcribed floats):
+
+```bash
+python scripts/sm2.py review --item "<name>" --q <0-5>
+```
+
+It applies the canonical SM-2 recurrence and prints a paste-ready row:
+- `EF' = EF + (0.1 − (5−q)(0.08 + (5−q)0.02))`, floored at 1.3
+- if `q < 3`: lapse → `reps = 0`, `interval = 1` (relearn tomorrow)
+- else: `reps += 1`; `interval = 1` (1st), `6` (2nd), then `round(interval_prev × EF')` **forever**
+
+Intervals **grow indefinitely** (e.g. 1 → 6 → 16 → 41 days) and adapt to how well you actually recalled — that is the whole point of SM-2 and what makes retention stick. Never cap at 3 reviews, and never use the old fixed "+3/+7 day" buckets.
 
 ### Phase 4: Targeted Problem Recommendations
 
@@ -101,22 +111,14 @@ For each weak area, recommend 2-3 specific problems that reinforce that exact pa
 
 ### 📅 Your Review Schedule
 
-#### Tomorrow
-- [ ] Re-attempt: [Problem name + LeetCode #]
-  - Focus: [Specific thing to practice]
-- [ ] Read: [Concept to review]
+Pull every due item from the **SM-2 Review Queue** (run `python scripts/sm2.py due`) and list them by `Due` date:
 
-#### In 3 Days
-- [ ] Practice: [Problem name + LeetCode #]
-  - Focus: [Pattern reinforcement]
+- **Due today / overdue** (highest priority): re-attempt the exact problem or pattern.
+  - Focus: [the specific thing that was shaky]
+- **Due soon**: preview the next item so it isn't a surprise.
+- **Not yet due**: don't practice early — SM-2 already computed the optimal moment. Trust the interval.
 
-#### In 1 Week
-- [ ] Practice: [Problem name + LeetCode #]
-  - Focus: [Solidifying understanding]
-
-#### In 2 Weeks
-- [ ] Light review: [Pattern name]
-  - Just solve one problem from this pattern to maintain
+If the queue is empty, seed it from today's weaknesses: run `python scripts/sm2.py add --item "<name>" --type Problem` for each, then grade them on the next review.
 
 ---
 
@@ -249,16 +251,15 @@ End every spaced repetition session with honest, grounded encouragement:
 - Detailed concept review
 - Pattern mastery tracker
 
-## Progress File Integration
+## Progress File Integration (MANDATORY)
 
-If the user has a `progress/progress.md` file:
-- After generating the review schedule, offer to update the Review Queue and Session Log in that file
-- Use the same SM-2 due dates from Phase 3 when writing to the queue
-- This makes the spaced repetition plan persistent across sessions
-- Say: "Want me to save this review schedule to your progress file?"
+Spaced repetition is worthless if it isn't persistent. After generating the schedule you MUST update `progress/progress.md` and `progress/sm2_state.json` — do not merely offer:
 
-If no progress file exists:
-- Suggest they set one up: "To track this across sessions, you can use `progress/progress.md` — ask me to set it up for you."
+1. **SM-2 state** — for every reviewed item, the `python scripts/sm2.py review --item "<name>" --q <0-5>` command already wrote `progress/sm2_state.json`. Paste its printed row into the **SM-2 Review Queue** table (or run `python scripts/sm2.py export-md` to regenerate the whole table).
+2. **Session Log** — append a short entry (problems, struggles, insights).
+3. **Pattern Confidence Map** — bump 🔴→🟡→🟢→⭐ for patterns that went well, and update **Curriculum Coverage** counts.
+
+If no progress file exists, create `progress/progress.md` from the template (it already contains the SM-2 Review Queue schema) before ending the session.
 
 ---
 
